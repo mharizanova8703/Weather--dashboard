@@ -12,14 +12,15 @@ li{
 }
 .wrapper-app-wraper{
     max-width: 400px;
-    margin: 60px;
+   margin: 45px;
+    padding: 50px;
 }
 
 .weather-new {
     background:cornsilk;
     padding: 40px;
     border-radius: 30px;
-    border: 10px solid beige;
+    border: 10px solid gray;
     margin: 90px;
 }
 .bnt  {
