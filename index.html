@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,54 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
+        <div class="wrapper">
+            <div class="weather-new">
+                <form id="submit-form" class="bn-2">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="City Name" class="form-control" id="input"
+                                autocomplete="off" />
+                            <div class="col-3">
+                                <!--Adding a primery btn for a extra visual weight -->
+                                <input type="summit" value="search" class="bnt btn-primery w-100" />
+                            </div>
+                        </div>
+                        <h1 id="city"></h1>
+                        <div class="col-6">
+                            <!--clear floated-->
+                            <div class="clearfix  weather-temp"></div>
+                            <div class="clearfix weather-temp">
+                                <img src="" alt="Clear" id="icon" class="float-left" />
+                                <strong id="temperature"></strong>
+                                <span class="units"><a href="#" id="celsius-link" class="active">&#176C</a> | <a
+                                        href="#" id="fahrenheit-link">&#176F</a></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>
+                                    Humidity: <span id="humidity"></span>%
+                                </li>
+                                <li>
+                                    Wind: <span id="wind"></span>km/h
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="forecast" id="weather"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </div>
-    
+
 </body>
 <!--axios link Using jsDelivr CDN-->
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-//java script link
+<!--java script link-->
 <script src="src/script.js"></script>
+
 </html>
