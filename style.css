@@ -1,43 +1,51 @@
-h1{
-    color:darkblue;
-    font-size: 20px;
-    margin: 10px;
+* {
+  margin: 0;
+  padding: 0;
 }
-p{
-  font-size: 15px;
+h1 {
+  color: darkblue;
+  font-size: 20px;
+  margin: 10px;
+}
+p {
+  font-size: 45px;
   font-weight: 400;
   padding: 30px;
+  text-align: relative;
+  font-family: 'Bonheur Royale', cursive;
 }
-li{
-    font-family: 'Dosis', sans-serif;
-    font-size: 30px;
-    color:grey;
-    margin: 0px;
-    padding: 15px;
-    
+li {
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 30px;
+  color: grey;
+  margin: 0px;
+  padding: 15px;
 }
-.wrapper-app-wraper{
-    max-width: 400px;
-   margin: 45px;
-    padding: 50px;
+.wrapper-app-wraper {
+  max-width: 400px;
+  margin: 45px;
+  padding: 50px;
 }
 
 .weather-new {
-    background:cornsilk;
-    padding: 40px;
-    border-radius: 30px;
-    border: 10px solid gray;
-    margin: 90px;
+  background: cornsilk;
+  padding: 20px;
+  border-radius: 30px;
+  border: 10px solid gray;
+  margin: 60px;
 }
-.bnt  {
-font-family: 'Dosis', sans-serif;
-    border-radius: 10px;
-    background-color: grey;
-    color:black;
-    margin: 15px;
+.bnt {
+  font-family: 'Bonheur Royale', cursive;
+  border-radius: 10px;
+  background-color: grey;
+  color: black;
+  margin: 15px;
+  font-size: 20px;
 }
-.form-control{
-    border-radius: 25px;
-    padding: 20px;
-    margin: 15px;
+.form-control {
+  font-family: 'Bonheur Royale', cursive;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 15px;
+  font-size: 20px;
 }
