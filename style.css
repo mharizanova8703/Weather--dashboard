@@ -4,6 +4,7 @@ h1{
     margin: 10px;
 }
 li{
+    font-family: 'Dosis', sans-serif;
     font-size: 30px;
     color:grey;
     margin: 0px;
@@ -24,9 +25,10 @@ li{
     margin: 90px;
 }
 .bnt  {
+font-family: 'Dosis', sans-serif;
     border-radius: 10px;
     background-color: grey;
-    color: white;
+    color:black;
     margin: 15px;
 }
 .form-control{
