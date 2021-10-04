@@ -2,17 +2,22 @@
   margin: 0;
   padding: 0;
 }
+.jumbotron {
+  
+margin-top: 20px;
+padding: 0px;
+background-image:url("https://images.all-free-download.com/images/graphiclarge/blue_sky_with_nature_vector_background_vector_545591.jpg") ;
+ color: yellow;
+ font-size: 60px;
+}
 h1 {
-  color: darkblue;
-  font-size: 20px;
-  margin: 10px;
+  text-align: center;
+  font-family: 'Bonheur Royale', cursive;
 }
 p {
-  font-size: 45px;
-  font-weight: 400;
-  padding: 30px;
-  text-align: relative;
+  margin: 40px;
   font-family: 'Bonheur Royale', cursive;
+  text-align: center;
 }
 li {
   font-family: 'Bonheur Royale', cursive;
