@@ -23,20 +23,21 @@ li {
   font-family: 'Bonheur Royale', cursive;
   font-size: 30px;
   color: grey;
-  margin: 0px;
-  padding: 15px;
+  margin: 5px;
+  padding: 5px;
 }
 .wrapper-app-wraper {
-  max-width: 400px;
-  margin: 45px;
-  padding: 50px;
+  max-width: 200px;
+  margin-left: 10px; 
+  padding: 20px;
+  position: right 10px;
 }
 
 .weather-new {
   background: cornsilk;
   padding: 20px;
   border-radius: 30px;
-  border: 10px solid gray;
+  border: 10px solid yellowgreen;
   margin: 60px;
 }
 .bnt {
