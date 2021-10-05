@@ -3,12 +3,11 @@
   padding: 0;
 }
 .jumbotron {
-  
-margin-top: 20px;
-padding: 0px;
-background-image:url("https://images.all-free-download.com/images/graphiclarge/blue_sky_with_nature_vector_background_vector_545591.jpg") ;
- color: yellow;
- font-size: 60px;
+  margin-top: 20px;
+  padding: 0px;
+  background-image: url('https://images.all-free-download.com/images/graphiclarge/blue_sky_with_nature_vector_background_vector_545591.jpg');
+  color: yellow;
+  font-size: 60px;
 }
 h1 {
   text-align: center;
@@ -28,7 +27,7 @@ li {
 }
 .wrapper-app-wraper {
   max-width: 200px;
-  margin-left: 10px; 
+  margin-left: 10px;
   padding: 20px;
   position: right 10px;
 }
@@ -41,7 +40,7 @@ li {
   margin: 60px;
 }
 .search-bar {
-    font-family: 'Bonheur Royale', cursive;
+  font-family: 'Bonheur Royale', cursive;
   font-size: 15px;
   border-radius: 15px 0px 0px 15px;
   background-color: white;
@@ -50,7 +49,11 @@ li {
   border: none;
   opacity: 80%;
 }
-#search-button{
-  background-color: rgb(217, 255, 0);
-    font-family: 'Bonheur Royale', cursive;
+.btn-search {
+  background-color: rgb(255, 0, 212);
+}
+#current-city {
+  font-size: 16px;
+  font-family: 'Bonheur Royale', cursive;
+  margin-top: 10px;
 }
