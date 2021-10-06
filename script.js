@@ -43,7 +43,6 @@ $(document).ready(function () {
   function getUvIndex(coords) {
     console.log(ApiKey)
     let queryUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coords.lat}&lon=${coords.lon}&appid=${ApiKey}`
-
     fetch(queryUrl)
       .then((response) => response.json())
       .then(function (data) {
@@ -73,6 +72,31 @@ $(document).ready(function () {
     var cityArray = JSON.parse(localStorage.getItem('citylist'))
     for (var i = 0; i < cityArray.lenght; i++) {
       console.log('cityArray', cityArray)
+      var a = $('<button>').attr({
+        class: 'list-group-item list-group-item-action',
+        id: cityArray[i],
+      })
+      $('#buttons-view').append(a)
+      $('#' + cityArray[i]).on('click', function (event) {
+        event.preventDefault()
+        var cityName = this.id
+      })
     }
+  }
+
+  function getWeatherForecast(userSearch) {
+    console.log('userSearch inside getWeatherForecast', userSearch)
+    let queryUrl =
+      'https://api.openweathermap.org/data/2.5/forecast?q=${userSearch}&appid={ApiKey}'
+
+    /// fetch(queryUrl).then((response) => response.json())
+    //.then(function (data) {
+    //  console.log('data from api call', data)
+    // }
+    //fetch(queryUrl)
+    // .then((response) => response.json())
+    // .then(function (data) {
+    // console.log('data from api call', data)
+    //  })
   }
 })
