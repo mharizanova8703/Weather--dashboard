@@ -95,10 +95,9 @@ $(document).ready(function () {
       .then((response) => response.json())
       .then(function (data) {
         console.log('data from api call', data)
-        document.querySelector('#day1 #temp').textContent =
-          data.list[2].main.temp
-        document.querySelector('#day1 #humidity').textContent =
-          data.list[2].main.humidity
+        document.querySelector('#temp').innerHTML = data.list[0].main.temp
+        // document.querySelector('#day1 .humidity').innerHTML =
+        data.list[0].main.temp
 
         // fetch(queryUrl).then((response) => response.json())
         //.then(function (data) {
