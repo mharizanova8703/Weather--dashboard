@@ -84,19 +84,27 @@ $(document).ready(function () {
     }
   }
 
-  function getWeatherForecast(userSearch) {
-    console.log('userSearch inside getWeatherForecast', userSearch)
-    let queryUrl =
-      'https://api.openweathermap.org/data/2.5/forecast?q=${userSearch}&appid={ApiKey}'
+   let userSearch = $('#search-input').val()
 
-    /// fetch(queryUrl).then((response) => response.json())
+function getCurrentForecast(userSearch) {
+    console.log('userSearch inside getCurrentWeather function', userSearch)
+
+    let queryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${userSearch}&appid=${ApiKey}&units=imperial`
+    console.log('query URL', queryUrl)
+fetch(queryUrl)
+      .then((response) => response.json())
+      .then(function (data) {
+        console.log('data from api call', data)
+ 
+    // fetch(queryUrl).then((response) => response.json())
     //.then(function (data) {
-    //  console.log('data from api call', data)
-    // }
+    //console.log('data from api call', data)
+   // }
     //fetch(queryUrl)
-    // .then((response) => response.json())
-    // .then(function (data) {
-    // console.log('data from api call', data)
-    //  })
-  }
+    //.then((response) => response.json())
+    //.then(function (data) {
+    //console.log('data from api call', data)
+    // })
+  })
+}
 })
