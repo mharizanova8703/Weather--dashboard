@@ -37,6 +37,7 @@ $(document).ready(function () {
           lat: data.coord.lat,
         }
         getUvIndex(coords)
+        getCurrentForecast(data.name)
       })
   }
 
@@ -84,27 +85,26 @@ $(document).ready(function () {
     }
   }
 
-   let userSearch = $('#search-input').val()
+  //let userSearch = $('#search-input').val()
 
-function getCurrentForecast(userSearch) {
-    console.log('userSearch inside getCurrentWeather function', userSearch)
-
-    let queryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${userSearch}&appid=${ApiKey}&units=imperial`
+  function getCurrentForecast(name) {
+    console.log(name)
+    let queryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=${ApiKey}&units=imperial`
     console.log('query URL', queryUrl)
-fetch(queryUrl)
+    fetch(queryUrl)
       .then((response) => response.json())
       .then(function (data) {
         console.log('data from api call', data)
- 
-    // fetch(queryUrl).then((response) => response.json())
-    //.then(function (data) {
-    //console.log('data from api call', data)
-   // }
-    //fetch(queryUrl)
-    //.then((response) => response.json())
-    //.then(function (data) {
-    //console.log('data from api call', data)
-    // })
-  })
-}
+
+        // fetch(queryUrl).then((response) => response.json())
+        //.then(function (data) {
+        //console.log('data from api call', data)
+        // }
+        //fetch(queryUrl)
+        //.then((response) => response.json())
+        //.then(function (data) {
+        //console.log('data from api call', data)
+        // })
+      })
+  }
 })
