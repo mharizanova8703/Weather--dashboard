@@ -95,6 +95,10 @@ $(document).ready(function () {
       .then((response) => response.json())
       .then(function (data) {
         console.log('data from api call', data)
+        document.querySelector('#day1 #temp').textContent =
+          data.list[2].main.temp
+        document.querySelector('#day1 #humidity').textContent =
+          data.list[2].main.humidity
 
         // fetch(queryUrl).then((response) => response.json())
         //.then(function (data) {
@@ -107,4 +111,45 @@ $(document).ready(function () {
         // })
       })
   }
+  let now = new Date()
+  let time = document.querySelector('time')
+  let date = now.getDate()
+  let year = now.getFullYear()
+  let hours = now.getHours()
+  let todayMinute = now.getMinutes()
+  if (todayMinute < 10) {
+    todayMinute = `0${todayMinute}`
+  }
+
+  let p = document.querySelector('p')
+
+  p.innerHTML = `${hours}:${todayMinute}`
+
+  let days = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ]
+  let day = days[now.getDay()]
+
+  let months = [
+    'January',
+    'Feburary',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ]
+  let month = months[now.getMonth()]
+  weekday.innerHTML = `Today is ${day}, ${month} ${date}, ${year}`
 })

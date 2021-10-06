@@ -34,10 +34,13 @@
     <!--wrapper to control css better-->
 
     <div class="weather-new">
+
         <form id="submitWeather" class="mb-3">
             <div class="row">
                 <div class="col-9">
                     <form id="search-bar">
+
+                        <li class="weekday" id="weekday">Thursday</li>
                         <input type="search" placeholder="Enter city" id="search-input" class="search-bar"
                             autocomplete="off" />
                         <button class="btn-search btn" id="search-button" type="submit">Search</button>
@@ -46,6 +49,7 @@
 
                     </form>
                     <div class="row now-city-time">
+                        <p class="time" id="time"></p>
                         <div id="current-city" class="col-6 city"></div>
                         <div class="col-6 date">
                             <div id="current-date"></div>
@@ -76,6 +80,13 @@
                         <h5 class="card-title mt-2 mr-5">5-Day Forecast </h5>
                         <div class="row">
                             <div class="col fiveDayOne">
+                                <ul id="day1">
+                                    <li id="temp"></li>
+                                    <li id="date"></li>
+                                    <li id="humidity"></li>
+                                    <li id="uv"></li>
+                                    <li></li>
+                                </ul>
                             </div>
                         </div>
         </form>
