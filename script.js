@@ -95,13 +95,30 @@ $(document).ready(function () {
       .then((response) => response.json())
       .then(function (data) {
         console.log('data from api call', data)
-        document.querySelector('#temp').innerHTML = data.list[0].main.temp
-        // document.querySelector('#day1 .humidity').innerHTML =
-        data.list[0].main.temp
+        document.querySelector('#temp1').innerHTML = data.list[0].main.temp
+        document.querySelector('#humidity1').innerHTML =
+          data.list[0].main.humidity
 
+        document.querySelector('#temp2').innerHTML = data.list[1].main.temp
+        document.querySelector('#humidity2').innerHTML =
+          data.list[1].main.humidity
+        document.querySelector('#temp3').innerHTML = data.list[2].main.temp
+        document.querySelector('#humidity3').innerHTML =
+          data.list[2].main.humidity
+
+
+
+          
+        for (let i = 0; i < data.list.length; i++) {
+          $('#temp1' + i + 1).text(data.list[i].main.temp)
+          $('#humidity1' + i + 1).text(data.list[i].main.humidity)
+          $('#wind1' + i + 1).text(data.list[i].main.wind)
+          $('#temp2' + i + 1).text(data.list[i].main.temp)
+          // same for humidity and wind
+        }
         // fetch(queryUrl).then((response) => response.json())
         //.then(function (data) {
-        //console.log('data from api call', data)
+        //console.log('data from api call', data.wind)
         // }
         //fetch(queryUrl)
         //.then((response) => response.json())

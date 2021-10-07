@@ -60,3 +60,6 @@ li {
 h2 {
   font-size: 19px;
 }
+.day-card {
+  background: chartreuse;
+}
